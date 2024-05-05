@@ -30,5 +30,7 @@ What is the asymptotic runtime ($\Theta$) of your algorithm in terms of the
 number of comparisons? What is it in terms of the number of flips? Add your
 answer to this markdown file.
 
-Number of Comparisons:
+Number of Comparisons: I believe that the runtime would be $\Theta(n^{2})$, because looking at the flip function which has fewer iterations in combination with my pancake function which calls flip twice and has 2 for loops.(Sort of "Hand Wavy" in my analysis here because I'm a little unsure if I'm correct)
+
+Number of Flips: For any given item the most flips possible is 2, one to get the item into the first position and another to put it in last position. Not every item in the array will need to be flipped of course, but I think overall the 2 flips indicates $\Theta(2n)$, but because we drop constants I think the final result would just be $\Theta(n)$
 
